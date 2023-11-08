@@ -1,18 +1,20 @@
 function start(cells) {
-  cells.forEach(function(cell) {
-    let isCrossPlaced = false; 
+	let i = 0;
+	
+	for (let cell of cells) {
+		cell.addEventListener('click', function() {
+			i++; 
 
-    cell.addEventListener('click', function() {
-      if (!isCrossPlaced) {
-        let cross = document.createElement('div');
-        cross.className = 'cross'; 
-        cross.textContent = '✖';
-        cell.appendChild(cross);
+      if (i % 2 == 0) {
+        this.textContent = 'O';
+        this.className = 'cross2';
+      } else {
+        this.textContent = 'X';
+        this.className = 'cross';
+      };
 
-        isCrossPlaced = true; 
-      }
-    });
-  });
+		});
+	}
 }
 
 let cells = document.querySelectorAll('#field td');
