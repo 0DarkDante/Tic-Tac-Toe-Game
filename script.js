@@ -3,16 +3,10 @@ function start(cells) {
 	
 	for (let cell of cells) {
 		cell.addEventListener('click', function() {
-			i++; 
-
-      if (i % 2 == 0) {
-        this.textContent = 'O';
-        this.className = 'cross2';
-      } else {
-        this.textContent = 'X';
-        this.className = 'cross';
-      };
-
+      if (this.textContent === '') { 
+        this.textContent = ['X', 'O'][i % 2];
+        i++;
+      }
 		});
 	}
 }
