@@ -1,3 +1,9 @@
+body {
+  background-image: url('/IMG/manish-jangid-sj18uat2xIY-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #field {
   margin: 0 auto;
   border-collapse: collapse;
