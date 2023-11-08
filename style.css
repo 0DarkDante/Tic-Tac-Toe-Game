@@ -1,0 +1,19 @@
+#field {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#field td {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cross {
+  color: red; /* Колір крестика */
+  font-size: 20px; /* Розмір шрифту */
+  line-height: 1; /* Це для центрування крестика */
+  cursor: pointer; /* Змінює вигляд курсору при наведенні на крестик */
+}
