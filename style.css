@@ -18,8 +18,15 @@ body {
 }
 
 .cross {
-  color: red; /* Колір крестика */
-  font-size: 20px; /* Розмір шрифту */
-  line-height: 1; /* Це для центрування крестика */
-  cursor: pointer; /* Змінює вигляд курсору при наведенні на крестик */
+  color: red;
+  font-size: 20px;
+  line-height: 1; 
+  cursor: pointer; 
+}
+
+.cross2 {
+  color: rgb(0, 255, 89); 
+  font-size: 20px; 
+  line-height: 1; 
+  cursor: pointer; 
 }
